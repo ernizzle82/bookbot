@@ -1,13 +1,11 @@
+from stats import count_words
+
+
 def get_book_text(path_to_file: str) -> str:
     with open(path_to_file, "r", encoding="utf-8") as file:
         file_contents = file.read()
 
     return file_contents
-
-
-def count_words(text: str) -> int:
-    word_list = text.split()
-    return len(word_list)
 
 
 def main():
